@@ -1,9 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import Button from './Button'
+import Heart from './Heart'
 
 class App extends Component {
   render() {
     return(
-      <h1>Hello world</h1>
+      <Button>I <Heart/> React</Button>
     )
   }
 }

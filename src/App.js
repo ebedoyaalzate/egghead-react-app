@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-
+import Widget from './Widget';
 class App extends Component {
   state = {
-    txt: 'this is the state text',
-    cat: 0
+    txt: 'this is the state text'
   }
 
   update = (e) => {
@@ -13,8 +12,9 @@ class App extends Component {
   render() {
     return(
       <React.Fragment>
-        <h1>{this.state.txt} - {this.state.cat}</h1>
-        <input type="text" onChange={this.update}></input>
+        <h1>{this.state.txt}</h1>
+        <Widget update={this.update}/>
+        <Widget update={this.update}/>
       </React.Fragment>
     )
   }
